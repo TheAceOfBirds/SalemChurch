@@ -1,0 +1,6 @@
+@import "_variables.scss";
+@import 'node_modules/bootstrap/dist/css/bootstrap.css';
+
+header {
+    background-color: $primary-color;
+}

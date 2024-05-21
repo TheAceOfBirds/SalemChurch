@@ -1,6 +1,4 @@
-
-
-namespace ProjectNewDeveloper.Controllers;
+namespace BlankMVC.Controllers;
 
 public class HomeController : Controller
 {
