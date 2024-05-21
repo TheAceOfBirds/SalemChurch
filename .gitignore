@@ -52,3 +52,6 @@ Thumbs.db
 /obj
 /appsettings.Development.json
 /appsettings.json
+/bin/Debug/net8.0
+/wwwroot/css/styles.css
+/wwwroot/js/scripts.js
