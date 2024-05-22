@@ -11,24 +11,25 @@ Gulp was added to process SASS and Javascript. Again, feel free to remove it, us
 
 ##### Now, for the details.
 
-Create a form of your choosing, either a contact us form, a "profile" edit form or something else,
-that contains a variety of field types, i.e. text, email, drop down, checkboxes, and client side
-and server side validation. 
+1. Create a form of your choosing, either a contact us form, a "profile" edit form or something else,
+that contains a variety of field types, i.e. text, email, drop down and checkboxes.
 
-A .NET MVC project comes with jQuery client side validation by default. I removed all of that.
+2. The form should have client side and server side validation. 
+
+    A .NET MVC project comes with jQuery client side validation by default. I removed all of that.
 You can add it back in, use the [aspnet-client-validation](https://www.npmjs.com/package/aspnet-client-validation) package,
-or something else.
+or something else. I'll let you decide how you want to do server side validation.
 
-I'll let you decide how you want to do server side validation.
+3. Utilize a [public api](https://github.com/public-api-lists/public-api-lists?tab=readme-ov-file) using either javascript or C# to build some aspect of your form.
 
-Utilize a [public api](https://github.com/public-api-lists/public-api-lists?tab=readme-ov-file) using either javascript or C# to build some aspect of your form.
+4. Use dependency injection in some way.
 
-Use dependency injection in some way.
-
-When your form is submitted and valid, show a summary page. For bonus points, use a service
+5. When your form is submitted and valid, show a summary page. For bonus points, use a service
 like [Railway](https://railway.app/) or [Azure](https://portal.azure.com/), or SQLite to save your form data,
 but TempData is fine too.
 
-Add any npm or nuget packages that you feel you need.
+##### Other
 
-Please clone our repository and make your source code available to us.
+Add any npm or nuget packages that you feel you need to complete the assignment.
+
+And finally, please clone our repository and make your source code available to us.
