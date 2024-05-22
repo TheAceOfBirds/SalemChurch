@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,6 +10,7 @@
     <Content Remove="wwwroot\css\styles.css" />
     <Content Remove="wwwroot\js\bundle.js" />
     <Content Remove="wwwroot\js\scripts.js" />
+    <Content Remove="wwwroot\js\scripts.js.map" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +18,14 @@
     <Folder Include="Assets\scss\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ProjectNewDeveloper.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.5" />
   </ItemGroup>
 
 </Project>

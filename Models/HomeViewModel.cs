@@ -1,6 +1,5 @@
-﻿namespace BlankMVC.Models
+﻿namespace BlankMVC.Models;
+
+public class HomeViewModel
 {
-    public class HomeViewModel
-    {
-    }
 }
