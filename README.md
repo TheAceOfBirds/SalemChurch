@@ -3,8 +3,8 @@
 Thanks for taking the time to complete this exercise. Below are some general requirements and guidelines
 for how we would like it completed.
 
-This is a basic .NET 8 MVC Project with not much in it yet. Bootstrap is installed by default when you create
-a new project and I left that in. Feel free to use it, remove it, roll your own CSS and use another framework. 
+This is a basic .NET 8 MVC project without a whole lot in it. Bootstrap is installed by default when you create
+a new project and I left that in. Feel free to use it, remove it, roll your own CSS or use another framework. 
 It doesn't matter.
 
 Gulp was added to process SASS and Javascript. Again, feel free to remove it, use it or ignore it.
