@@ -9,7 +9,7 @@ It doesn't matter.
 
 Gulp was added to process SASS and Javascript. Again, feel free to remove it, use it or ignore it.
 
-##### Now, for the details.
+##### Now, for the requirements
 
 1. Clone our repository.
 
