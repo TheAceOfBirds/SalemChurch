@@ -7,16 +7,21 @@ This is a basic .NET 8 MVC project without a whole lot in it. Bootstrap is insta
 a new project and I left that in. Feel free to use it, remove it, roll your own CSS or use another framework. 
 It doesn't matter.
 
-Gulp was added to process SASS and Javascript. Again, feel free to remove it, use it or ignore it.
+**Gulp** was added to process SASS and Javascript. Again, feel free to remove it, use it or ignore it.
 
-##### Now, for the requirements
+**Node.js** will be needed for this project as well because of **Gulp** and other packages, so, 
+be sure you have it installed.
+
+#### Now, for the guidelines
+
+These are not hard requirements, but as many as you can do in a reasonable time is a good goal.
 
 1. Clone our repository.
 
 2. Create a form of your choosing, either a contact us form, a "profile" edit form or something else,
 that contains a variety of field types, i.e. text, email, drop down and checkboxes.
 
-3. The form should have client side and server side validation. 
+3. The form should have server side validation and display error messages. Client side validation would be a bonus. 
 
     A .NET MVC project comes with jQuery client side validation by default. I removed all of that.
 You can add it back in, use the [aspnet-client-validation](https://www.npmjs.com/package/aspnet-client-validation) package,
