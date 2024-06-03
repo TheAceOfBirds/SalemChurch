@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Pet>
+<Form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                      <p class="text-right">
+    @Html.ActionLink("Create New", "Create")
+</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Birthday
+                </th>
+                <th>
+                    Owner Email
+                </th>
+                <th>
+                    Fixed
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                            
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AvailableTypes.FirstOrDefault(n=>n.Value == item.Type.ToString()).Text)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Birthday)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OwnerEmail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fixed)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn-xs btn-success glyphicon glyphicon-thumbs-up" })<b> ᛫</b>
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</form>

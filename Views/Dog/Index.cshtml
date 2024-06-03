@@ -1,0 +1,35 @@
+﻿@model IEnumerable<BlankMVC.Models.Pets.API.Dog>
+<h1>This pulls directly from the API at <a href="https://dogapi.dog/">https://dogapi.dog/</a> </h1>
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Min Weight(m)</th>
+            <th>Max Weight(m)</th>
+            <th>Hypo?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dog in Model)
+            {
+                <tr>
+                    <td>
+                        @dog.attributes.name    
+                    </td>
+                    <td>
+                        @dog.attributes.description    
+                    </td>
+                    <td>
+                        @dog.attributes.male_weight.min
+                    </td>
+                    <td>
+                        @dog.attributes.male_weight.max
+                </td>
+                    <td>
+                        <input name="Roles" type="checkbox" checked="@dog.attributes.hypoallergenic" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <table>
